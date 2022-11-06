@@ -4,16 +4,16 @@
   position: fixed;
   width: 100vw;
   left: 0;
-  /* overflow: hidden; */
   transition: top 0.3s;
 }
+
 .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 2vh;
 }
 
 .head-img {
@@ -24,6 +24,8 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-x: hidden;
 }
 
 .topnav a:hover {
@@ -79,6 +81,11 @@ ul {
   /* padding-left: 100; */
   /* padding-right: 100; */
 }
+
+p {
+  font-size: 1.5vw;
+}
+
 li {
   display: block;
   flex: 0 1 auto; /* Default */
@@ -91,17 +98,23 @@ li {
   text-align: center;
 }
 
-#personimg {
-  padding-left: 10px;
+.par {
+  width: 100vw;
 }
 
-.par {
-  justify-content: space-between;
+.par ul {
+  width: 100%;
+  padding: 2vw;
+  margin: 0px;
+  box-sizing: border-box;
+  justify-content: space-around;
   display: flex;
 }
 
 .circular--square {
+  display: inline-block;
   border-radius: 50%;
+  width: 15vw;
 }
 
 .center-ls {
@@ -109,4 +122,26 @@ li {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.live-stream-title {
+  padding-top: 10vh;
+  text-align: center;
+  font-size: 3vw;
+}
+
+#matt-img:hover {
+  content: url('Matt2.jpg');
+}
+
+#aditya-img:hover {
+  content: url('Aditya2.jpg');
+}
+
+#marcus-img:hover {
+  content: url('Marcus2.jpg');
+}
+
+#alex-img:hover {
+  content: url('Alex2.jpg');
 }

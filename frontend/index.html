@@ -1,91 +1,88 @@
 <!DOCTYPE html>
 
-
-
 <link rel="stylesheet" href="website.css">
 <link rel="icon" href="Video_2022-11-05_23_01_48_AdobeExpress.gif" type="image/gif" />
-
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <header>
-    <title>Code Red</title>
+    <title>Code Green | Home</title>
 </header>
 
 <body style="background-color:#989898;">
-
         <div class="topnav">
             <a class="active" href="index.html">Home</a>    
-            <a href="live.html">LiveStream</a>
-            
+            <a href="live.html">Live Stream</a>
+            <a target="_blank" href="https://github.com/UBH-Fall2022/ubh-fall2022-repotemplate-mattrrubino">GitHub</a>
         </div>
         
         <img id = "header" class ="center-fit" src = "cropped_new.jfif" style="width: 90;" >
            
-
-    <!-- <img id= "image"> -->
     <div class = "some-text" style="background-color: white;">
         <div class = "Small-Heading-Thing">
             <h1 style="text-align:center">About the Project</h1>
-            <div style="text-align:center">
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                
-            </div>
-            <iframe style="text-align:center" id="vid" width="420" height="315" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></iframe>
+            <p>Water bottles are a significant source of waste. According to the Container Recycling Institute, billions 
+            of water bottles end up in landfills each year. This is problematic because plastic is highly resistant to
+            biodegradation; bottles accumulate over time, creating an unsustainable condition. We wanted to find a way to
+            turn plastic waste into an asset, recycling it to reduce the need for landfills.</p>
+            
+            <p>For our project, we successfully created 3D printer filament out of water bottles. The water bottles were
+            turned into filament by cutting them in a spiral and then drawing them through a modified hot end using a continuous
+            motor. Our project also includes a web interface which allows one to view the filament creation and printing process.</p>
+
+            <p>The bottle cutter was built using two ball bearings. The filament generation used a hot end, a continuous motor,
+            and a potentiometer to control the motor speed. For the streaming system, an ESP32-CAM was programmed using C++.
+            The web frontend was implemented using HTML, CSS, and vanilla JavaScript, and the backend was implemented in Go.</p>
         </div>
+        <iframe id="vid" style="width: 50vw; height: 28.125vw; padding-bottom: 10vh; border: none;" src="https://www.youtube.com/embed/EBYXnl_esCo"></iframe>
     </div>
 
     <div class = "some-text" style="background-color: rgb(159, 212, 190)">
         <div class="Small-Heading-Thing">
             <h1 style="text-align:center">About Us</h1>
-            <p style="text-align:center">Project team “Code Red” won the UB Hackathon 2020 - 2020 $2,000 Grand Prize. “Code Red” is a team of two Electrical
-            Engineering majors and two Computer Science majors Marcus Francisco, Alexander Francisco, Aditya Pandya, and Matthew
-            Rubino. Our projects over the years has featured progressively more advanced home protection and security systems. This
-            year, the team has pivoted and created a sustainability project known as “Code Green” under the alias of “Code Red”. To
-            illustrate the subset of technology involving manufacturing rather than emergency systems, the team is working under the
-            “Code Blue” name.
-</p>
+
+            <p>“Code Red” is a team of two Electrical Engineering majors (Marcus Franscisco and Alex Francisco) and two Computer
+            Science majors (Aditya Pandya and Matthew Rubino). Over the years, our projects have featured progressively more
+            advanced home protection and security systems. This year, the team pivoted and created a sustainability project known
+            as “Code Green” under the alias of “Code Red”. To illustrate the subset of technology involving manufacturing rather than
+            emergency systems, the team is now working under the name “Code Blue”.</p>
         </div>
     </div>
     <div class = "par">
         <ul>
             <li class = "circle">
                 <div class="img-with-text">
-                    <img class = "circular--square" id="personimg" src="Mattjfif.jfif" alt="sometext" />
-                    <p>Matthew Rubino</p>
-                    <p>Developer</p>
+                    <a target="_blank" href="https://www.linkedin.com/in/matthew-rubino-90b4b0235">
+                        <img class = "circular--square" id="matt-img" src="Mattjfif.jfif" alt="Matthew Rubino profile picture" />
+                    </a>
+                    <p>Matthew Rubino<br>Developer</p>
                 </div>
             </li>
             <li class = "circle">
                 <div class="img-with-text">
-                    <img class = "circular--square" id="personimg" src="aditya.jfif" alt="sometext" />
-                    <p>Aditya Pandya</p>
-                    <p>Developer</p>
+                    <a target="_blank" href="https://www.linkedin.com/in/aditya-pandya-cs">
+                        <img class = "circular--square" id="aditya-img" src="aditya.jfif" alt="Aditya Pandya profile picture" />
+                    </a>
+                    <p>Aditya Pandya<br>Developer</p>
                 </div>
             </li>
             <li class = "circle">
                 <div class="img-with-text">
-                    <img class = "circular--square" id="personimg" src="marcusjfif.jfif" alt="sometext" />
-                    <p>Marcus Francisco</p>
-                    <p>Engineer</p>
+                    <a target="_blank" href="https://www.linkedin.com/in/marcus-francisco">
+                        <img class = "circular--square" id="marcus-img" src="marcusjfif.jfif" alt="Marcus Francisco profile picture" />
+                    </a>
+                    <p>Marcus Francisco<br>Engineer</p>
                 </div>
             </li>
             <li class = "circle">
                 <div class="img-with-text">
-                    <img class = "circular--square" id="personimg" src="Alexjfif.jfif" alt="sometext" />
-                    <p>Alexander Francisco</p>
-                    <p>Engineer</p>
+                    <a target="_blank" href="https://www.linkedin.com/in/alex-james-francisco">
+                        <img class = "circular--square" id="alex-img" src="Alexjfif.jfif" alt="Alex Francisco profile picture" />
+                    </a>
+                    <p>Alexander Francisco<br>Engineer</p>
                 </div>
             </li>
         </ul>
     </div>
-    
-
-
 </body>
