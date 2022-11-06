@@ -1,15 +1,24 @@
 let socket = new WebSocket("wss://changingtheworldwith.tech/user");
+var prevScrollpos = window.pageYOffset;
+let image;
 
 socket.onopen = function(e) {
-  alert("[open] Connection established");
+//   alert("[open] Connection established");
+    image = document.getElementById("image");
 };
 
-socket.onmessage = function(msg) {
-    var arrayBuffer = msg.data;
-    var bytes = new Uint8Array(arrayBuffer);
 
-    var image = document.getElementById('image');
-    image.src = 'data:image/png;base64,'+ btoa(bytes);
+socket.onmessage = async function(event) {
+    const reader = new FileReader();
+
+    reader.addEventListener("loadend", () => {
+        const binary = reader.result;
+        const encoded = btoa(binary);
+
+        image.src = "data:image/jpg;base64," + encoded;
+    });
+
+    reader.readAsBinaryString(event.data);
 };
 
 socket.onclose = function(event) {
@@ -23,4 +32,16 @@ socket.onclose = function(event) {
 socket.onerror = function(error) {
 //   alert(`[error]`);
   console.log(error)
+};
+
+
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("topnav").style.top = "0";
+    } 
+    else {
+        document.getElementById("topnav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
 };

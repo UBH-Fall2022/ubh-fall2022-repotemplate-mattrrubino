@@ -1,6 +1,10 @@
 .topnav {
-  background-color: #ee1806;
-  overflow: hidden;
+  background-color: #0699ee;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  /* overflow: hidden; */
+  transition: top 0.3s;
 }
 .topnav a {
   float: left;
