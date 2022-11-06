@@ -16,14 +16,14 @@
   font-size: 17px;
 }
 
-.fill-screen {
-  height: 100vw;
+.head-img {
+  padding-top: 60000;
+  padding-bottom: 60000;
 }
 
-.body {
+body {
   padding: 0;
   margin: 0;
-  width: 100vw;
 }
 
 .topnav a:hover {
@@ -41,6 +41,15 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 230px;
+  margin-bottom: 230px;
+}
+
+#vid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 .some-text {
@@ -55,5 +64,49 @@
   display: block;
   margin-left: 25%;
   margin-right: 25%;
-  padding-top: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+ul {
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: space-between;
+  width: 100%;
+  /* background: #cacaca; */
+  margin-left: 25%;
+  margin-right: 25%;
+  /* padding-left: 100; */
+  /* padding-right: 100; */
+}
+li {
+  display: block;
+  flex: 0 1 auto; /* Default */
+  list-style-type: none;
+  /* background: #fafafa; */
+  text-align: center;
+}
+
+.image-with-text {
+  text-align: center;
+}
+
+#personimg {
+  padding-left: 10px;
+}
+
+.par {
+  justify-content: space-between;
+  display: flex;
+}
+
+.circular--square {
+  border-radius: 50%;
+}
+
+.center-ls {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
